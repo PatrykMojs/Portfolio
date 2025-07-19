@@ -1,0 +1,39 @@
+.header {
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 20vh;
+  margin: 0px 0 40px;
+  position: relative;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.header::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  /* background: #0077FF;      niebieski pasek pod nagłówkiem */
+  margin: 20px auto 0;
+  border-radius: 2px;
+}
+
+/* Widoczny po wejściu w viewport */
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Dekoracyjna linia pod nagłówkiem */
+.header::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #0077ff;
+  margin: 20px auto 0;
+  border-radius: 2px;
+}
+

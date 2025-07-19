@@ -1,0 +1,182 @@
+.navbar {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 9999;
+  opacity: 0;
+  animation: fadeSlideDown 1.5s ease-out forwards;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+}
+
+
+.center a {
+  color: #ffffff;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  text-shadow:
+    0px 0px 6px rgba(0, 0, 0, 0.9),
+    0px 0px 12px rgba(0, 0, 0, 0.9),
+    0px 0px 24px rgba(0, 0, 0, 0.8);
+}
+
+
+.center a:hover {
+  color: #0077ff;
+  text-shadow: 0px 4px 14px rgba(0, 119, 255, 0.4);
+}
+
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+.right a{
+  color: #ffffff;
+  
+}
+
+.logoMenu {
+  width: 4vw;
+}
+
+@keyframes fadeSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+.menuToggle {
+  background: none;
+  border: none;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+
+.mobileMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  z-index: 9998;
+}
+
+.mobileMenu a {
+  color: white;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .center {
+    display: none;
+  }
+
+  .menuToggle {
+    display: block;
+  }
+
+  .right {
+    gap: 0.5rem;
+  }
+
+  .logoMenu {
+    width: 40px;
+  }
+}
+
+.logoMenu {
+  width: 4vw;
+  max-width: 60px;
+}
+
+.center a {
+  color: #ffffff;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.right a,
+.languageIcon {
+  font-size: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.right a:hover,
+.languageIcon:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 768px) {
+  .logoMenu {
+    width: 32px;
+  }
+
+  .center {
+    display: none;
+  }
+
+  .mobileMenu a {
+    font-size: 1rem;
+  }
+
+  .menuToggle {
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  .right a,
+  .languageIcon {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 480px) {
+  .logoMenu {
+    width: 28px;
+  }
+
+  .right a,
+  .languageIcon {
+    font-size: 1.1rem;
+  }
+
+  .mobileMenu a {
+    font-size: 0.95rem;
+  }
+}

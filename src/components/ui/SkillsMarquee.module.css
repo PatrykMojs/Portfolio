@@ -1,0 +1,28 @@
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  background: transparent;
+  padding: 20px 0;
+}
+
+.track {
+  display: inline-block;
+  animation: scroll 20s linear infinite;
+}
+
+.track > * {
+  display: inline-block;
+  margin: 0 40px;
+  font-size: 3rem; 
+  /* color: #fff; biały kolor na ciemnym tle */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

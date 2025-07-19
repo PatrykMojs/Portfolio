@@ -1,0 +1,80 @@
+.timeline {
+  width: 70%;
+  margin: 0 auto;
+  padding-left: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px; 
+  width: 2px;
+  background-color: #0077ff;
+}
+
+.item {
+  position: relative;
+}
+
+.dot {
+  position: absolute;
+  top: 0;
+  left: -29px;
+  width: 16px;
+  height: 16px;
+  background: #0077ff;
+  border-radius: 50%;
+  border: 2px solid white;
+  z-index: 2;
+}
+
+.content {
+  margin-left: 40px; 
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 16px;
+  color: white;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.period {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.institution {
+  font-style: italic;
+  margin-top: 4px;
+  color: #ccc;
+}
+
+.description {
+  margin-top: 8px;
+  color: #ddd;
+}
