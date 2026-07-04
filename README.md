@@ -147,15 +147,6 @@ It also serves as a frontend project demonstrating:
 - integration with external frontend services
 - clean project organization
 
-## Future Improvements
-
-- Add more detailed project case studies
-- Add screenshots and live demo links for selected projects
-- Improve accessibility
-- Add carefully selected animations without affecting performance
-- Add automated deployment workflow
-- Add tests for selected components
-
 ## Author
 
 **Patryk Meus**
